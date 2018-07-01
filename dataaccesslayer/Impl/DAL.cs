@@ -8,11 +8,17 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace DataAccessLayer.Impl
 {
     public class DAL<T> : IDisposable, IEntityCRUD<T> where T : Entity
     {
+        TransactionScope transaction;
+        public DAL()
+        {
+            transaction = new TransactionScope();
+        }
         public int Delete(T item)
         {
             return new DBExecuter().Execute(SqlGenerator<T>.BuildDeleteCommand(item));
@@ -20,7 +26,8 @@ namespace DataAccessLayer.Impl
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            transaction.Complete();
+            transaction.Dispose();
         }
 
         public void Insert(T item)
