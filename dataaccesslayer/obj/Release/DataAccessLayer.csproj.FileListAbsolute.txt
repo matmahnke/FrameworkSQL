@@ -1,0 +1,9 @@
+E:\Comparador\DataAccessLayer\bin\Release\DataAccessLayer.dll
+E:\Comparador\DataAccessLayer\bin\Release\DataAccessLayer.pdb
+E:\Comparador\DataAccessLayer\bin\Release\DTO.dll
+E:\Comparador\DataAccessLayer\bin\Release\DTO.pdb
+E:\Comparador\DataAccessLayer\obj\Release\DataAccessLayer.csprojResolveAssemblyReference.cache
+E:\Comparador\DataAccessLayer\obj\Release\DataAccessLayer.csproj.CoreCompileInputs.cache
+E:\Comparador\DataAccessLayer\obj\Release\DataAccessLayer.csproj.CopyComplete
+E:\Comparador\DataAccessLayer\obj\Release\DataAccessLayer.dll
+E:\Comparador\DataAccessLayer\obj\Release\DataAccessLayer.pdb
